@@ -1,18 +1,35 @@
-Entrega 1 — Lexer
+# Entrega 1 — Lexer
 
-Completar el Lexer proporcionado por el catedratico.
+## Objetivo
 
-Implementar
-PR_SI
-PR_MIENTRAS
-PR_IMPRIMIR
-OP_REL
-Tokens adicionales propuestos en la tarea anterior.
+Completar el **Lexer** proporcionado por el catedrático.
 
-OP_REL debe reconocer:  ==  !=  <  >  <=  >=
+## Implementación
 
-Prueba: El Lexer debe procesar correctamente el siguiente código en main.py
+Implementar los siguientes tokens:
 
+- `PR_SI`
+- `PR_MIENTRAS`
+- `PR_IMPRIMIR`
+- `OP_REL`
+- Tokens adicionales propuestos en la tarea anterior.
+
+## Operadores relacionales
+
+`OP_REL` debe reconocer los siguientes operadores:
+
+- `==`
+- `!=`
+- `<`
+- `>`
+- `<=`
+- `>=`
+
+## Prueba
+
+El Lexer debe procesar correctamente el siguiente código en `main.py`:
+
+```python
 codigo = """
 entero x = 10;
 entero limite = 20;
@@ -24,12 +41,3 @@ mientras (x <= limite) {
     x = x + 2;
 }
 """
-
-Debe generar correctamente los tokens, incluyendo sus valores y números de línea.
-
-Entrega
-
-lexer.py
-main.py
-
-Esta entrega corresponde únicamente al análisis léxico.
